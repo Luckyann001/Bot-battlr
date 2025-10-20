@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.bot-collection, .army-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.bot-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.bot-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.bot-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #2a9d8f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.delete {
+  background-color: #e63946;
+}
