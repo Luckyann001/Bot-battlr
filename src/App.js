@@ -10,7 +10,7 @@ function App() {
   const [selectedBot, setSelectedBot] = useState(null);
 
   useEffect(() => {
-    fetch("https://json-server-vercel-bkd05125x-luckyanns-projects.vercel.app/bots")
+    fetch("https://json-server-vercel-psi-olive.vercel.app/bots")
       .then((res) => res.json())
       .then((data) => setBots(data));
   }, []);
@@ -26,7 +26,7 @@ function App() {
   };
 
   const deleteBot = (bot) => {
-    fetch(`("https://json-server-vercel-bkd05125x-luckyanns-projects.vercel.app/bots"${bot.id}`, { method: "DELETE" })
+    fetch(`("https://json-server-vercel-psi-olive.vercel.app/bots"${bot.id}`, { method: "DELETE" })
       .then(() => {
         setBots(bots.filter((b) => b.id !== bot.id));
         setYourBots(yourBots.filter((b) => b.id !== bot.id));
